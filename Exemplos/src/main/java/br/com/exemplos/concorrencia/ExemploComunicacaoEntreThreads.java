@@ -12,7 +12,8 @@ class FilaCompartilhada {
             wait();
         }
         fila.offer(valor);
-        System.out.println("Produzido: " + valor);
+        //String nomeDaThread = Thread.currentThread().getName();
+        System.out.println("Produzido: " + valor + " Thread ");
         notify(); // Notifica a thread consumidora.
     }
 
@@ -22,7 +23,8 @@ class FilaCompartilhada {
             wait();
         }
         int valor = fila.poll();
-        System.out.println("Consumido: " + valor);
+        //String nomeDaThread = Thread.currentThread().getName();
+        System.out.println("Consumido: " + valor + " Thread ");
         notify(); // Notifica a thread produtora.
         return valor;
     }
@@ -47,7 +49,7 @@ public class ExemploComunicacaoEntreThreads {
             for (int i = 1; i <= 10; i++) {
                 try {
                     int valor = filaCompartilhada.consumir();
-                    Thread.sleep(200); // Simula o consumo de dados
+                    Thread.sleep(100); // Simula o consumo de dados
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
