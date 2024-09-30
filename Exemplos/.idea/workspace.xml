@@ -37,7 +37,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ExemploBarreiraCiclica.executor": "Run",
     "Application.ExemploConcorrenciaProblemas.executor": "Run",
+    "Application.ExemploCountDownLatch2.executor": "Run",
     "Application.ExemploCriacaoDeThreads.executor": "Run",
     "Application.br.com.exemplos.calibracao.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -57,10 +59,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.exemplos.concorrencia" />
       <recent name="br.com.carrinho" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.br.com.exemplos.calibracao.Main">
+  <component name="RunManager" selected="Application.ExemploBarreiraCiclica">
+    <configuration name="ExemploBarreiraCiclica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.exemplos.concorrencia.ExemploBarreiraCiclica" />
+      <module name="Exemplos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.exemplos.concorrencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExemploConcorrenciaProblemas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.exemplos.concorrencia.ExemploConcorrenciaProblemas" />
       <module name="Exemplos" />
@@ -74,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExemploCountdownLatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.exemplos.concorrencia.ExemploCountdownLatch" />
+    <configuration name="ExemploCountDownLatch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.exemplos.concorrencia.ExemploCountDownLatch2" />
       <module name="Exemplos" />
       <extension name="coverage">
         <pattern>
@@ -100,19 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.carrinho.Main" />
-      <module name="Exemplos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.carrinho.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="br.com.exemplos.calibracao.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.exemplos.calibracao.Main" />
       <module name="Exemplos" />
@@ -128,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.br.com.exemplos.calibracao.Main" />
+        <item itemvalue="Application.ExemploBarreiraCiclica" />
+        <item itemvalue="Application.ExemploCountDownLatch2" />
         <item itemvalue="Application.ExemploConcorrenciaProblemas" />
+        <item itemvalue="Application.br.com.exemplos.calibracao.Main" />
         <item itemvalue="Application.ExemploCriacaoDeThreads" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ExemploCountdownLatch" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695859614082</updated>
       <workItem from="1727704709661" duration="374000" />
-      <workItem from="1727713333223" duration="1600000" />
+      <workItem from="1727713333223" duration="3750000" />
     </task>
     <servers />
   </component>

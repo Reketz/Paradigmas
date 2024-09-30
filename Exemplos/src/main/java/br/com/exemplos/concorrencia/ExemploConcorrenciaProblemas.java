@@ -20,7 +20,7 @@ public class ExemploConcorrenciaProblemas {
         Contador contador = new Contador();
 
         Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 1000; i++) {
                 contador.incrementar();
             }
         });
