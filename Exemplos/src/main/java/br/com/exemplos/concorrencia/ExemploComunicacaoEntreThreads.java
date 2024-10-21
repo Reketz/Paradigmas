@@ -35,7 +35,7 @@ public class ExemploComunicacaoEntreThreads {
         final FilaCompartilhada filaCompartilhada = new FilaCompartilhada();
 
         Thread produtora = new Thread(() -> {
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 1; i <= 100; i++) {
                 try {
                     filaCompartilhada.produzir(i);
                     Thread.sleep(100); // Simula a produção de dados
@@ -46,10 +46,11 @@ public class ExemploComunicacaoEntreThreads {
         });
 
         Thread consumidora = new Thread(() -> {
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 1; i <= 100; i++) {
                 try {
-                    int valor = filaCompartilhada.consumir();
-                    Thread.sleep(100); // Simula o consumo de dados
+                    int caixa = filaCompartilhada.consumir();
+                    //System.out.println("Consumiu o caixa: " + caixa);
+                    Thread.sleep(800); // Simula o consumo de dados
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

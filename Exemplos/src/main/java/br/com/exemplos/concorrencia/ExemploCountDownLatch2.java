@@ -24,6 +24,9 @@ public class ExemploCountDownLatch2 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
+
     }
 }
 

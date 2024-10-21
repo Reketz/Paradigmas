@@ -5,13 +5,13 @@ import java.util.concurrent.Executors;
 public class ExemploPoolDeThreads {
     public static void main(String[] args) {
         // Cria um pool de threads com 3 threads
-        ExecutorService poolDeThreads = Executors.newFixedThreadPool(3);
+        ExecutorService poolDeThreads = Executors.newFixedThreadPool(2);
 
         // Adiciona tarefas ao pool
         for (int i = 1; i <= 10; i++) {
             final int numero = i;
             poolDeThreads.execute(() -> {
-                System.out.println("Tarefa " + numero + " executada por " + Thread.currentThread().getName());
+                System.out.println("Impressão " + numero + " executada por Impressora (" + Thread.currentThread().getName() + ")");
                 processarTarefa(numero);
             });
         }
@@ -27,6 +27,6 @@ public class ExemploPoolDeThreads {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Tarefa " + numeroTarefa + " concluída.");
+        System.out.println("Impressão " + numeroTarefa + " concluída.");
     }
 }

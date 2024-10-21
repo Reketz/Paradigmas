@@ -2,11 +2,11 @@ package br.com.exemplos.concorrencia;
 class Contador {
     private int valor = 0;
 
-    public void incrementar() {
+    public synchronized void incrementar() {
         valor++;
     }
 
-    public void decrementar() {
+    public synchronized void decrementar() {
         valor--;
     }
 
@@ -20,14 +20,16 @@ public class ExemploConcorrenciaProblemas {
         Contador contador = new Contador();
 
         Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 contador.incrementar();
+                System.out.println("Incrementando");
             }
         });
 
         Thread t2 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 contador.decrementar();
+                System.out.println("Decrementando");
             }
         });
 

@@ -10,7 +10,7 @@ public class ExemploBarreiraCiclica {
 
         // Cria um CyclicBarrier para 3 threads, com uma ação opcional que será executada quando todas as threads atingirem a barreira.
         CyclicBarrier barrier = new CyclicBarrier(NUM_THREADS, () -> {
-            System.out.println("Todas as threads chegaram à barreira e estão sincronizadas. Vamos continuar!");
+            System.out.println("Finalizando...");
         });
 
         // Cria e inicia 3 threads.

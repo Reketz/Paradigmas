@@ -38,5 +38,7 @@ public class ExemploCountdownLatch {
             Thread threadCorredor = new Thread(new Corredor(nomeCorredor, barreira));
             threadCorredor.start();
         }
+
+        System.out.println("Finalizando...");
     }
 }
